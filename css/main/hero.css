@@ -1,0 +1,118 @@
+.section__hero {
+  margin-bottom: 80px;
+}
+
+.section-hero__swiper {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+.section-hero__wrapper {
+  position: absolute;
+  height: 800px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section-hero__slide {
+  min-height: 796px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-hero__slide--one {
+  background-image: url('../../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 1.jpg');
+}
+
+.section-hero__slide--two {
+  background-image: url('../../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg');
+}
+
+.section-hero__slide--three {
+  background-image: url('../../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg');
+}
+
+.section-hero__container {
+  position: relative;
+  top: 241px;
+}
+
+.section-hero__wrap {
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.section-hero__title {
+  margin: 0;
+  margin-bottom: 18px;
+  max-width: 597px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 84px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  color: var(--color-white);
+}
+
+.section-hero__descr {
+  margin: 0;
+  margin-bottom: 90px;
+  max-width: 579px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  color: var(--color-white);
+}
+
+.section-hero__btn {
+  display: block;
+  max-width: 314px;
+  padding: 20px 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  color: var(--color-white);
+  background-color: #9D5CD0;
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+  border-radius: 100px;
+  border: 3px solid transparent;
+  transition-property: background-color, border-color, outline-color;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.section-hero__btn:hover {
+  border-color: var(--color-bilobaflower);
+}
+
+.section-hero__btn:focus-visible {
+  outline-color: var(--color-heliotrope);
+}
+
+.section-hero__btn:active {
+  outline-color: transparent;
+  background-color: var(--color-royalpurple);
+  border-color: var(--color-bilobaflower);
+}

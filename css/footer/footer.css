@@ -1,0 +1,55 @@
+.footer {
+  padding-top: 47px;
+  padding-bottom: 48px;
+  background-color: var(--color-black);
+}
+
+.footer__logo {
+  transform: translateY(3px);
+}
+
+.footer__link {
+  display: block;
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+  transition: outline-color .2s ease-in-out;
+}
+
+.footer__link:focus-visible {
+  outline-color: var(--color-heliotrope);
+}
+
+.footer__link:active {
+  outline: none;
+}
+
+.footer__box {
+  justify-content: space-between;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-social__pic path {
+  transition: fill .2s ease-in-out;
+}
+
+.footer-social__link {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-social__link:hover .footer-social__pic path,
+.footer-social__link:active .footer-social__pic path {
+  fill: var(--color-white);
+}
+
+.footer-social__link:focus-visible .footer-social__pic path {
+  fill: var(--color-amethyst);
+}
+
+.footer-social__link:focus-visible {
+  outline: none;
+}
+

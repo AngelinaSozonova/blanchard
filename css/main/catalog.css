@@ -1,0 +1,372 @@
+.section__catalog {
+  margin-bottom: 84px;
+}
+
+.section-catalog__title {
+  margin: 0;
+  margin-bottom: 15px;
+  color: var(--color-mine-shaft);
+}
+
+.section-catalog__descr {
+  margin: 0;
+  margin-bottom: 39px;
+  max-width: 1080px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-mine-shaft);
+}
+
+.section-catalog__content {
+  justify-content: space-between;
+}
+
+.section-catalog__artists {
+  max-width: 50%;
+  margin-right: 50px;
+}
+
+.section-catalog__tabs {
+  display: none;
+}
+
+.section-catalog__tabs--active {
+  display: block;
+}
+
+.section-catalog-tabs__pic {
+  margin-bottom: 28px;
+}
+
+.section-catalog-tabs__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--color-mine-shaft);
+}
+
+.section-catalog-tabs__time {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-dustygray);
+}
+
+.section-catalog-tabs__descr {
+  margin: 0;
+  max-width: 749px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-mine-shaft);
+}
+
+.section-catalog-tabs__empty {
+  margin-bottom: 15px;
+}
+
+.section-catalog-tabs__link {
+  display: inline-block;
+  padding: 0 3px;
+  max-width: 90px;
+  border-bottom: 1px solid transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-amethyst);
+  transform: translate(-3px);
+}
+
+.section-catalog-tabs__link:hover {
+  border-color: var(--color-amethyst);
+  color: var(--color-amethyst);
+}
+
+.section-catalog-tabs__link:focus-visible {
+  outline: none;
+  background-color: var(--color-amethyst);
+  color: var(--color-white);
+  border-color: transparent;
+}
+
+.section-catalog-tabs__link:active {
+  background-color: transparent;
+  color: var(--color-royalpurple);
+  border-color: var(--color-royalpurple);
+}
+
+.section-catalog__accordion {
+  flex: 1;
+  width: 50%;
+}
+
+.section-catalog-accordion__title {
+  margin: 0;
+  max-width: 600px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-mine-shaft);
+  transition-property: background-color, color;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.section-catalog-accordion__arrow {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-color: var(--color-gallery);
+  transition-property: background-color, border-color;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.section-catalog-accordion__arrow::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 16px;
+  left: 18px;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  transition: transform .2s ease-in-out;
+  transform: rotate(45deg);
+}
+
+.section-catalog-accordion__header:hover .section-catalog-accordion__title {
+  color: var(--color-amethyst);
+  transition: color .2s ease-in-out;
+}
+
+.section-catalog-accordion__header:focus-visible .section-catalog-accordion__title {
+  background-color: var(--color-amethyst);
+  color: var(--color-white);
+}
+
+.section-catalog-accordion__header:active {
+  border-color: var(--color-royalpurple);
+  border-bottom: 1px solid var(--color-royalpurple);
+  z-index: 12;
+}
+
+.section-catalog-accordion__header:active .section-catalog-accordion__title,
+.ui-accordion-header-active .section-catalog-accordion__title {
+  background-color: transparent;
+  color: var(--color-royalpurple);
+}
+
+.section-catalog-accordion__header:active .section-catalog-accordion__arrow,
+.ui-accordion-header-active .section-catalog-accordion__arrow {
+  border-color: var(--color-amethyst);
+  background-color: var(--color-bilobaflower);
+}
+
+.section-catalog-accordion__header:active .section-catalog-accordion__arrow::after,
+.ui-accordion-header-active .section-catalog-accordion__arrow::after {
+  transform: rotate(225deg);
+}
+
+.section-catalog-accordion__list--xxl {
+  flex-wrap: wrap;
+}
+
+.section-catalog-accordion__list--lg {
+  display: none;
+}
+
+.section-catalog-accordion__item--xxl {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 196px;
+}
+
+.section-catalog-accordion__item--xxl:not(:last-child) {
+  margin-right: 62px;
+}
+
+.section-catalog-accordion__btn {
+  display: block;
+  max-width: 196px;
+  border-bottom: 1px solid transparent;
+  font-size: 16px;
+  line-height: 31px;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  transition-property: border-color, color, background-color;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  color: var(--color-mine-shaft);
+}
+
+.ui-widget-content .section-catalog-accordion__btn.section-catalog-accordion__btn--active {
+  color: var(--color-amethyst);
+}
+
+.ui-widget-content .section-catalog-accordion__btn {
+  color: var(--color-mine-shaft);
+}
+
+.section-catalog-accordion__btn:hover {
+  color: var(--color-amethyst);
+  border-color: var(--color-amethyst);
+}
+
+.section-catalog-accordion__btn:focus-visible {
+  outline: none;
+  background-color: var(--color-amethyst);
+  color: var(--color-white);
+}
+
+.section-catalog-accordion__btn:active {
+  border-color: transparent;
+  background-color: transparent;
+  color: var(--color-amethyst);
+}
+
+.ui-accordion .ui-accordion-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0 32px 0;
+  border: none;
+  background-color: transparent;
+  border-top: 1px solid var(--color-silver);
+  border-bottom: 1px solid var(--color-silver);
+  margin-bottom: -3px;
+  z-index: 10;
+  transition-property: border-color, color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: .3s;
+  cursor: pointer;
+}
+
+.ui-widget {
+  font-family: 'OpenSans', sans-serif;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: 'OpenSans', sans-serif;
+}
+
+.ui-icon {
+  display: none;
+}
+
+.ui-accordion-header.ui-state-active {
+  border-color: var(--color-royalpurple);
+}
+
+.ui-accordion-header.ui-state-hover {
+  border-color: var(--color-amethyst);
+  border-bottom: 1px solid var(--color-amethyst);
+  z-index: 12;
+  transition: border-color .3s ease-in-out;
+}
+
+.ui-accordion-header.ui-state-focus {
+  outline: none;
+  border-color: var(--color-amethyst);
+  border-bottom: 1px solid var(--color-amethyst);
+  z-index: 12;
+}
+
+.ui-accordion .ui-accordion-content {
+  padding: 0;
+  border: none;
+  padding-top: 27px;
+  padding-bottom: 21px;
+}
+
+.ui-widget-content .section-catalog-accordion__link {
+  color: var(--color-amethyst);
+}
+
+.section-catalog-accordion__empty {
+  display: flex;
+  align-items: center;
+}
+
+.section-catalog-accordion__left {
+  width: 275px;
+  height: 189px;
+  margin-right: 24px;
+  border: 2px solid #B7B7B7;
+}
+
+.section-catalog-accordion__right {
+  width: 50%;
+}
+
+.section-catalog-accordion__loading {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 93%;
+  height: 89%;
+  background-color: #B7B7B7;
+}
+
+.section-catalog-accordion__caption {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-mine-shaft);
+}
+
+.section-catalog-accordion__descr {
+  margin: 0;
+  margin-bottom: 5px;
+  max-width: 275px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-mine-shaft);
+}
+
+.section-catalog-accordion__link {
+  display: inline-block;
+  max-width: 90px;
+  padding: 0 3px;
+  border-bottom: 1px solid transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  transition-property: border-color, color, background-color;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  transform: translate(-3px);
+}
+
+.section-catalog-accordion__link:hover {
+  border-color: var(--color-amethyst);
+  color: var(--color-amethyst);
+}
+
+.section-catalog-accordion__link:focus-visible {
+  outline: none;
+  background-color: var(--color-amethyst);
+  color: var(--color-white);
+  border-color: transparent;
+}
+
+.section-catalog-accordion__link:active {
+  background-color: transparent;
+  color: var(--color-royalpurple);
+  border-color: var(--color-royalpurple);
+}

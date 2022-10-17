@@ -1,0 +1,17 @@
+.section__aboutus {
+  margin-bottom: 70px;
+}
+
+.section-aboutus__title {
+  margin: 0;
+  margin-bottom: 15px;
+  color: var(--color-mine-shaft);
+}
+
+.section-aboutus__descr {
+  margin: 0;
+  max-width: 1080px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-mine-shaft);
+}
